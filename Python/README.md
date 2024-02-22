@@ -1,4 +1,5 @@
 # TRILHA DE PYTHON
 
-Cidade: Itabira
+Cidade: ITABIRA - MG
+<br/>
 Matrícula: PDITA166
