@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  border: 0;
+  font-family: "Times New Roman", Times, serif, Courier, monospace;
+  font-size: 35px;
+  color: white;
+}
+
+body {
+  background-image: url(img/repeating-triangles.svg);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+#sectMenu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 100vw;
+  align-items: center;
+  background-color: black;
+}
+
+#sectMenu h1 {
+  color: darkgoldenrod;
+}
+
+#titulo {
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+nav ul li a {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+nav ul li a:hover {
+  color: darkgoldenrod;
+  transition: all ease 0.8s;
+}
+
+#sectBanner {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+#banner {
+  padding-top: 40px;
+  width: 800px;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.atores {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.info {
+  font-size: 20px;
+}
+
+.card {
+  width: 200px;
+  margin: 40px;
+  background-color: darkgoldenrod;
+  padding: 20px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+#sinopse {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#sinopseText {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  margin: 50px 100px 0px 100px;
+  padding: 20px;
+  background-color: black;
+}
+
+#temporadas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.cardLinha {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cardTemp {
+  display: flex;
+  flex-direction: row;
+  width: 350px;
+  height: 200px;
+  margin: 35px;
+  background-color: darkgoldenrod;
+  padding: 20px;
+}
+
+.infoTemp {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  justify-content: center;
+  margin: 5px;
+}
+
+.info2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#premiacao {
+  display: flex;
+  flex-direction: column;
+}
+
+table {
+  text-align: center;
+  flex-wrap: wrap;
+  border-collapse: collapse;
+  margin: 50px 100px; 
+}
+
+th,
+td {
+  width: 300px;
+  border: 1px solid darkgoldenrod;
+  background-color: black;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 10px;
+  height: 200px;
+  background-color: black;
+}
+
+#link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#link a {
+  text-decoration: none;
+}
+
+#link a:hover {
+  color: darkgoldenrod;
+  transition: all ease 0.8s;
+}
+
+#inicio {
+  display: flex;
+  justify-content: end;
+  margin-top: 15px;
+}
+
+#inicio a {
+  text-decoration: none;
+}
+
+#inicio a:hover {
+  color: darkgoldenrod;
+  transition: all ease 0.8s;
+}
+
+.subTitulo {
+  padding-top: 87px;
+  background-color: darkgoldenrod;
+  background-clip: content-box;
+}
