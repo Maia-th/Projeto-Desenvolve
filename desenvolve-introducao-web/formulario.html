@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <center>
+      <h1>Preencha o Formulario a baixo:</h1>
+    </center>
+
+    <form action="" style="text-align: left; margin-left: 10%">
+      <h2>Dados pessoais</h2>
+      <label for="name">Nome</label>
+      <input type="text" id="name" /> <br /><br />
+      <label for="mail">Email</label>
+      <input type="email" id="mail" /> <br /><br />
+      <label for="phone">Telefone</label>
+      <input type="tel" id="phone" />
+      <h2>Pesquisa</h2>
+      <label for="quest01">O seu problema foi resolvido ?<br /><br /></label>
+      <input type="radio" name="q1" id="quest01" />Sim
+      <br />
+      <input type="radio" name="q1" id="quest01" />Não <br /><br />
+      <label for="quest02">Qual o seu nivel de satisfação ? <br /><br /></label>
+      <input type="radio" name="q2" id="quest02" />0 - Extremamente decepcionado
+      <br />
+      <input type="radio" name="q2" id="quest02" />1 - Nada satisfeito
+      <br />
+      <input type="radio" name="q2" id="quest02" />2 - Pouco satisfeito
+      <br />
+      <input type="radio" name="q2" id="quest02" />3 - Satisfeito
+      <br />
+      <input type="radio" name="q2" id="quest02" />4 - Muito satisfeito
+      <br />
+      <input type="radio" name="q2" id="quest02" />5 - Extremamente satisfeito
+      <br /><br />
+      <label for="quali">Selecione a nossa melhor qualidade:</label>
+      <select id="quali">
+        <option>Ecolha uma opção!</option>
+        <option>Agilidade no atendimento</option>
+        <option>Equipe tecnica qualificada</option>
+        <option>Melhores preços da região</option>
+      </select>
+      <br /><br />
+      <label>
+        <input type="checkbox" />O cliente autoriza compartilhar sua resposta
+        com terceiros
+      </label>
+      <br /><br />
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>
