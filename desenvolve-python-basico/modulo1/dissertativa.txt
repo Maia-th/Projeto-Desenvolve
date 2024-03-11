@@ -1,0 +1,7 @@
+1. Inicie o algoritmo.
+2. Leia o valor de n, o qual representa o multiplicador na tabuada do 9.
+3. Calcule o primeiro dígito (digito1) como n-1.
+4. Calcule o segundo dígito (digito2) como 10-n.
+5. Calcule o resultado final multiplicando o primeiro dígito por 10 e somando com o segundo dígito.
+6. Imprima o resultado final.
+7. Encerre o algoritmo.
