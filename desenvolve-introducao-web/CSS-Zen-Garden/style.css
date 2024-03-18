@@ -13,7 +13,9 @@ body {
   color: #f2f2f2;
   font-size: 16px;
   font-family: sans-serif;
-  margin: 2rem;
+  width: 80%;
+  max-width: 1280px;
+  margin: auto;
 }
 
 a {
@@ -41,6 +43,7 @@ h3 {
 
 .intro {
   text-align: right;
+  height: 550px;
 }
 
 .main p {
@@ -49,4 +52,41 @@ h3 {
 
 abbr {
   font-variant: small-caps;
+}
+
+#design-archives {
+  display: none;
+}
+
+header {
+  background-color: #f2f2f2;
+  color: #1a1a1a;
+  text-align: center;
+}
+
+header h1, header h2{
+    display: inline-block;
+}
+
+header h1 {
+    margin: 0 1em 0 1em;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    margin: 1em;
+    text-align: center;
+} 
+
+footer {
+    margin: 4%;
+}
+
+footer a {
+    display: inline-block;
+    border: solid 2px;
+    padding: 0.5em;
 }
