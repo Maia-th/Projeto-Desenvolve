@@ -90,3 +90,23 @@ footer a {
     border: solid 2px;
     padding: 0.5em;
 }
+
+/*Exercícios - Posicionamento*/
+
+.page-wrapper {
+  position: relative;
+}
+
+.explanation {
+  width: 60%;
+  margin-right: 35%;
+  border-right: solid 1px #f79728;
+  padding-right: 2%;
+}
+
+#design-selection {
+  position: absolute;
+  top: 560px;
+  left: 62%;
+  padding: 0 1%;
+}
