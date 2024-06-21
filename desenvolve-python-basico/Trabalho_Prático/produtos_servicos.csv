@@ -1,0 +1,5 @@
+nome,tipo,preco,quantidade
+Computador,Produto,3000.00,10
+Teclado,Produto,150.00,50
+Manutenção,Serviço,200.00,5
+Consultoria,Serviço,500.00,2
