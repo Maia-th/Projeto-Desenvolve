@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade de Seletores</title>
+</head>
+
+<body>
+    <h1 class="h1">Titulo</h1>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis sed, quisquam iure nesciunt optio ex aut
+        nobis excepturi tempora? Odit quia tempore cumque molestiae excepturi ipsa sit consequuntur quam eius!
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, fugit unde earum libero eius itaque nisi
+        deleniti sed vel necessitatibus, explicabo minima est assumenda, fugiat laborum sequi consectetur corrupti fuga.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, fugit unde earum libero eius itaque nisi
+        deleniti sed vel necessitatibus, explicabo minima est assumenda, fugiat laborum sequi consectetur corrupti fuga.
+    </p>
+
+    <br>
+
+    <button>Botão</button>
+
+    <script>
+        const h1 = document.querySelector('.h1');
+        const p = document.querySelectorAll('p');
+        const button = document.querySelector('button');
+        const ul = document.querySelector('ul');
+
+        h1.textContent = 'Novo Titulo';
+        ul.style.listStyle = 'none';
+        for (paragrafo of p)
+            paragrafo.classList.add('paragrafo');
+        button.textContent = 'Novo Botão';
+    </script>
+
+    <style>
+        .paragrafo {
+            background-color: black;
+            color: white;
+            padding: 1rem;
+        }
+    </style>
+</body>
+
+</html>
