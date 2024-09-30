@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizador</title>
+    <style>
+        .temporizador {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .temporizador div {
+            font-size: 2em;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="temporizador">
+        <div>Dias: <span id="dias">0</span></div>
+        <div>Horas: <span id="horas">0</span></div>
+        <div>Minutos: <span id="minutos">0</span></div>
+        <div>Segundos: <span id="segundos">0</span></div>
+    </div>
+
+    <script>
+        function calcularTempoRestante(dataFutura) {
+            const agora = new Date();
+            const diferenca = dataFutura - agora;
+
+            const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+            const horas = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
+            const segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
+
+            return {
+                dias,
+                horas,
+                minutos,
+                segundos
+            };
+        }
+
+        function atualizarTemporizador() {
+            const dataFutura = new Date('2024-12-31T23:59:59');
+            const tempoRestante = calcularTempoRestante(dataFutura);
+
+            document.getElementById('dias').innerText = tempoRestante.dias;
+            document.getElementById('horas').innerText = tempoRestante.horas;
+            document.getElementById('minutos').innerText = tempoRestante.minutos;
+            document.getElementById('segundos').innerText = tempoRestante.segundos;
+        }
+
+        setInterval(atualizarTemporizador, 1000);
+        atualizarTemporizador();
+    </script>
+</body>
+
+</html>
