@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+input {
+    width: 18rem;
+    padding: 1rem;
+    text-align: center;
+    border: solid 1px chocolate;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: chocolate;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.buttonLimpar {
+    background-color: brown;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+p {
+    font-size: 2rem;
+    margin-top: 3rem;
+}
