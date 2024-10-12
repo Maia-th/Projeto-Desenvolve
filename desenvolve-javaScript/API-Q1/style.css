@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+
+}
+.areaUtil{
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    text-align: center;
+    width: 70dvw;
+    height: 60dvh;
+    overflow: auto;
+    background-color: #f5f5f5;
+}
+
+.areaUtil #buscaUsers {
+    text-align: center;
+    margin: 1rem;
+    padding: 0.5rem;
+    width: 50%;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+.areaUtil button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.areaUtil button:hover {
+    background-color: black;
+}
+
+.areaUtil #userEncontrados {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.areaUtil #userEncontrados ul li {
+    list-style: square;
+    color: #007bff;
+    font-size: 1.5rem;
+}
+
+.areaUtil #userEncontrados ul li.notFound {
+    color: red;
+}
