@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+
+}
+
+.areaUtil{
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    text-align: center;
+    width: 80dvw;
+    height: 80dvh;
+    overflow: auto;
+    background-color: #f5f5f5;
+}
+
+.areaUtil .twitter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.areaUtil #postText {
+    margin: 1rem;
+    padding: 0.5rem;
+    width: 50%;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+.areaUtil button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.areaUtil button:hover {
+    background-color: black;
+}
+
+.areaUtil #posts {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.areaUtil #posts .post {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: auto;
+    width: 35rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    background-color: #f5f5f5
+}
+
+.areaUtil #posts .post button {
+    margin-top: 1rem;
+}
