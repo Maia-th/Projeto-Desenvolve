@@ -1,0 +1,1 @@
+C) POO. Pois devido a estrutura de classes heranças, esse é o melhor paradigma para criar um codigo modular, escalavel e eficiente!
