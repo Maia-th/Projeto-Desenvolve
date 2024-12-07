@@ -1,5 +1,8 @@
 package com.gerenciamento.biblioteca;
 
+import com.gerenciamento.biblioteca.Model.Livro;
+import com.gerenciamento.biblioteca.Model.Emprestimo;
+
 public class Usuario extends Pessoa {
     private int idade;
     private Emprestimo[] historicoEmprestimos;

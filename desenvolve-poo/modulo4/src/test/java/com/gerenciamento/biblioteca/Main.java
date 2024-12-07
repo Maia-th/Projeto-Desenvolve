@@ -1,5 +1,10 @@
 package com.gerenciamento.biblioteca;
+
 import java.util.Date;
+import com.gerenciamento.biblioteca.Model.Usuario;
+import com.gerenciamento.biblioteca.Model.Autor;
+import com.gerenciamento.biblioteca.Model.Livro;
+import com.gerenciamento.biblioteca.Model.Emprestimo;
 
 public class Main {
     public static void main(String[] args) {

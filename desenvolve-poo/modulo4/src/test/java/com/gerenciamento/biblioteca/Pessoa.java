@@ -1,4 +1,7 @@
 package com.gerenciamento.biblioteca;
+
+import com.gerenciamento.biblioteca.Model.Livro;
+
 public class Pessoa {
     private String nome;
     protected Livro[] livros;

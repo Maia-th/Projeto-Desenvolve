@@ -1,5 +1,7 @@
 package com.gerenciamento.biblioteca;
 
+import com.gerenciamento.biblioteca.Model.Autor;
+
 public class Livro {
     private String titulo;
     private Autor autor;

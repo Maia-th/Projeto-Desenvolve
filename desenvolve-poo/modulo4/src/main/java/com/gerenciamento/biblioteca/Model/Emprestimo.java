@@ -1,4 +1,4 @@
-package com.gerenciamento.biblioteca;
+package com.gerenciamento.biblioteca.Model;
 import java.util.Date;
 
 public class Emprestimo {

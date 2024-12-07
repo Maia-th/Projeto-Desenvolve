@@ -1,4 +1,4 @@
-package com.gerenciamento.biblioteca;
+package com.gerenciamento.biblioteca.Model;
 
 public class Livro {
     private String titulo;

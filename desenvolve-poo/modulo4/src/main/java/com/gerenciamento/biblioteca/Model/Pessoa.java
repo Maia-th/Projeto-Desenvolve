@@ -1,4 +1,4 @@
-package com.gerenciamento.biblioteca;
+package com.gerenciamento.biblioteca.Model;
 
 public class Pessoa {
     private String nome;

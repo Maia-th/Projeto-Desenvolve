@@ -1,6 +1,8 @@
 package com.gerenciamento.biblioteca;
 import java.util.Date;
 
+import com.gerenciamento.biblioteca.Model.Usuario;
+
 public class Emprestimo {
     private Date dataRetirada;
     private Date dataDevolucao;

@@ -1,6 +1,9 @@
 package com.gerenciamento.biblioteca;
+
 import org.junit.Test;
 import static org.junit.Assert.*;
+import com.gerenciamento.biblioteca.Model.Autor;
+import com.gerenciamento.biblioteca.Model.Livro;
 
 public class AutorTest {
 
