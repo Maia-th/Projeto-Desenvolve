@@ -11,16 +11,17 @@ public class AutorTest {
     public void testAutorCriadoComSucesso() {
         Livro livro = new Livro("Titulo", null, "Genero");
         Livro[] livros = {livro};
-        Autor autor = new Autor("Nome", livros, "Nacionalidade");
+        Autor autor = new Autor("Nome", livros, "Nacionalidade", true);
 
         assertEquals("Nome", autor.getNome());
         assertArrayEquals(livros, autor.getLivros());
         assertEquals("Nacionalidade", autor.getNacionalidade());
+        assertTrue(autor.isUsuario());
     }
 
     @Test
     public void testSetNome() {
-        Autor autor = new Autor("Nome", new Livro[]{}, "Nacionalidade");
+        Autor autor = new Autor("Nome", new Livro[]{}, "Nacionalidade", false);
         autor.setNome("Novo Nome");
 
         assertEquals("Novo Nome", autor.getNome());
@@ -28,7 +29,7 @@ public class AutorTest {
 
     @Test
     public void testSetLivros() {
-        Autor autor = new Autor("Nome", new Livro[]{}, "Nacionalidade");
+        Autor autor = new Autor("Nome", new Livro[]{}, "Nacionalidade", false);
         Livro livro = new Livro("Titulo", autor, "Genero");
         Livro[] livros = {livro};
         autor.setLivros(livros);
@@ -42,7 +43,7 @@ public class AutorTest {
         Livro livro2 = new Livro("Titulo2", null, "Genero2");
         Livro livro3 = new Livro("Titulo3", null, "Genero1");
         Livro[] livros = {livro1, livro2, livro3};
-        Autor autor = new Autor("Nome", livros, "Nacionalidade");
+        Autor autor = new Autor("Nome", livros, "Nacionalidade", false);
 
         Livro[] obrasPorGenero = autor.getObrasPublicadasPorGeneros("Genero1");
 

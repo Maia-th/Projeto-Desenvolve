@@ -1,15 +1,11 @@
-package com.gerenciamento.biblioteca;
-
-import org.junit.Test;
-import static org.junit.Assert.*;
-import com.gerenciamento.biblioteca.Model.Autor;
-import com.gerenciamento.biblioteca.Model.Livro;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class LivroTest {
 
     @Test
     public void testLivroCriadoComSucesso() {
-        Autor autor = new Autor("Autor", new Livro[0], "Nacionalidade",false);
+        Autor autor = new Autor("Autor");
         Livro livro = new Livro("Titulo", autor, "Genero");
 
         assertEquals("Titulo", livro.getTitulo());
@@ -20,7 +16,7 @@ public class LivroTest {
 
     @Test
     public void testSetDisponivel() {
-        Livro livro = new Livro("Titulo", new Autor("Autor", new Livro[0], "Nacionalidade",false), "Genero");
+        Livro livro = new Livro("Titulo", new Autor("Autor"), "Genero");
         livro.setDisponivel(false);
 
         assertFalse(livro.isDisponivel());
@@ -28,7 +24,7 @@ public class LivroTest {
 
     @Test
     public void testValidarEmprestimo() {
-        Livro livro = new Livro("Titulo", new Autor("Autor", new Livro[0], "Nacionalidade",false), "Genero");
+        Livro livro = new Livro("Titulo", new Autor("Autor"), "Genero");
         livro.validarEmprestimo(); // Deve imprimir "Livro disponivel para emprestimo."
 
         livro.setDisponivel(false);

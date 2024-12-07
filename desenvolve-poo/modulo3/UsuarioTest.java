@@ -1,18 +1,11 @@
-package com.gerenciamento.biblioteca;
-
-import org.junit.Test;
-import static org.junit.Assert.*;
-import com.gerenciamento.biblioteca.Model.Livro;
-import com.gerenciamento.biblioteca.Model.Usuario;
-import com.gerenciamento.biblioteca.Model.Emprestimo;
-import com.gerenciamento.biblioteca.Model.Autor;
-import java.util.Date;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class UsuarioTest {
 
     @Test
     public void testUsuarioCriadoComSucesso() {
-        Livro livro = new Livro("Titulo", new Autor("Autor", new Livro[0], "Nacionalidade",false), "Genero");
+        Livro livro = new Livro("Titulo", new Autor("Autor"), "Genero");
         Livro[] livros = {livro};
         Emprestimo[] historico = {};
         Usuario usuario = new Usuario("Nome", livros, 25, historico);
@@ -34,7 +27,7 @@ public class UsuarioTest {
     @Test
     public void testSetHistoricoEmprestimos() {
         Usuario usuario = new Usuario("Nome", new Livro[]{}, 25, new Emprestimo[]{});
-        Emprestimo emprestimo = new Emprestimo(new Date(), new Date(), new Livro("Titulo", new Autor("Autor", new Livro[0], "Nacionalidade",false), "Genero"), usuario);
+        Emprestimo emprestimo = new Emprestimo(new Date(), new Date(), new Livro("Titulo", new Autor("Autor"), "Genero"), usuario);
         Emprestimo[] historico = {emprestimo};
         usuario.setHistoricoEmprestimos(historico);
 

@@ -5,14 +5,20 @@ import java.util.List;
 
 public class Autor extends Pessoa {
     private String nacionalidade;
+    private boolean isUsuario;
 
-    public Autor(String nome, Livro[] livros, String nacionalidade) {
+    public Autor(String nome, Livro[] livros, String nacionalidade, boolean isUsuario) {
         super(nome, livros);
         this.nacionalidade = nacionalidade;
+        this.isUsuario = isUsuario;
     }
 
     public String getNacionalidade() {
         return nacionalidade;
+    }
+
+    public boolean isUsuario() {
+        return isUsuario;
     }
 
     public Livro[] getObrasPublicadas() {

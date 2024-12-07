@@ -1,16 +1,11 @@
-package com.gerenciamento.biblioteca;
-
-import org.junit.Test;
-import static org.junit.Assert.*;
-import com.gerenciamento.biblioteca.Model.Livro;
-import com.gerenciamento.biblioteca.Model.Pessoa;
-import com.gerenciamento.biblioteca.Model.Autor;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class PessoaTest {
 
     @Test
     public void testPessoaCriadaComSucesso() {
-        Livro livro = new Livro("Titulo", new Autor("Autor", new Livro[0], "Nacionalidade",false), "Genero");
+        Livro livro = new Livro("Titulo", new Autor("Autor"), "Genero");
         Livro[] livros = {livro};
         Pessoa pessoa = new Pessoa("Nome", livros);
 
@@ -29,7 +24,7 @@ public class PessoaTest {
     @Test
     public void testSetLivros() {
         Pessoa pessoa = new Pessoa("Nome", new Livro[]{});
-        Livro livro = new Livro("Titulo", new Autor("Autor", new Livro[0], "Nacionalidade",false), "Genero");
+        Livro livro = new Livro("Titulo", new Autor("Autor"), "Genero");
         Livro[] livros = {livro};
         pessoa.setLivros(livros);
 
