@@ -1,5 +1,8 @@
 package com.gerenciamento.biblioteca.Model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Autor extends Pessoa {
     private String nacionalidade;
 
@@ -21,14 +24,12 @@ public class Autor extends Pessoa {
     }
 
     public Livro[] getObrasPublicadasPorGeneros(String genero) {
-        Livro[] obrasPorGenero = new Livro[livros.length];
-        int count = 0;
+        List<Livro> obrasPorGenero = new ArrayList<>();
         for (Livro livro : livros) {
             if (livro.getGenero().equals(genero)) {
-                obrasPorGenero[count] = livro;
-                count++;
+                obrasPorGenero.add(livro);
             }
         }
-        return obrasPorGenero;
+        return obrasPorGenero.toArray(new Livro[0]);
     }
 }
