@@ -1,0 +1,4 @@
+import personalizador.layout
+import personalizador.painel
+import personalizador.progresso
+import personalizador.estilo
